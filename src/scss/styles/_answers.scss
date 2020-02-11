@@ -1,0 +1,36 @@
+.answers {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  background-color: #3a3a3a;
+  width: 49%;
+  border: 1px solid #424242;
+
+  .answer {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    color: #ffffff;
+    border-bottom: 1px solid #4d4d4d;
+
+    .indicator {
+      width: 12px;
+      height: 12px;
+      background-color: #727272;
+      border-radius: 50%;
+      margin: 0 20px;
+    }
+
+    .correct {
+      background-color: #30c975;
+    }
+
+    .incorrect {
+      background-color: #c93030;
+    }
+  }
+
+  .answer:last-of-type {
+    border: none;
+  }
+}

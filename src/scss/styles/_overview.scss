@@ -1,0 +1,69 @@
+.overview {
+  display: flex;
+  border-radius: 6px;
+  background-color: #3a3a3a;
+  width: 49%;
+  border: 1px solid #424242;
+  padding: 20px;
+
+  .not-done {
+    font-size: 16px;
+    color: #ffffff;
+    width: 200px;
+    line-height: 1.5rem;
+  }
+
+  .bird-overview {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .bird-overview-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .bird-overview-img {
+        height: 150px;
+        border-radius: 6px;
+        margin-right: 20px;
+      }
+
+      .bird-overview-header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .bird-name {
+          margin-top: 8px;
+          font-size: 18px;
+          color: #ffffff;
+        }
+
+        .bird-type {
+          font-size: 14px;
+          color: #ffffff;
+        }
+
+        .line {
+          width: 100%;
+          height: 1px;
+          margin: 10px 0;
+          background-color: #4b4b4b;
+        }
+
+        audio {
+          width: 100%;
+          outline: none;
+        }
+      }
+    }
+
+    .description {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .logo {
+      width: 200px;
+      height: 55px;
+      background-image: url("./../assets/birdLogo.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .score {
+      font-size: 20px;
+      color: #ffffff;
+    }
+  }
+
+  .bottom-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 36px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+
+    .bird-type {
+      color: #ffffff;
+      font-size: 16px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #652e85;
+    }
+
+    .selected {
+      background-color: #8e51b6;
+    }
+  }
+}
