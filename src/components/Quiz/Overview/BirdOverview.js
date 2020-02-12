@@ -4,13 +4,11 @@ import BirdOverviewNotDone from "./BirdOverviewNotDone";
 
 export default class BirdOverview extends Component {
   render() {
+    const { done, bird } = this.props;
+
     return (
       <div className="overview">
-        {!this.props.done ? (
-          <BirdOverviewNotDone />
-        ) : (
-          <BirdOverviewDone bird={this.props.bird} />
-        )}
+        {!done ? <BirdOverviewNotDone /> : <BirdOverviewDone bird={bird} />}
       </div>
     );
   }

@@ -3,17 +3,18 @@ import AudioPlayer from "react-h5-audio-player";
 
 export default class BirdOverviewDone extends Component {
   render() {
+    const { image, name, audio, species, description } = this.props.bird;
     return (
       <div className="bird-overview">
         <div className="bird-overview-wrapper">
-          <img className="bird-overview-img" src={this.props.bird.image} />
+          <img className="bird-overview-img" src={image} />
           <div className="bird-overview-header">
-            <h2 className="bird-name">{this.props.bird.name}</h2>
+            <h2 className="bird-name">{name}</h2>
             <div className="line"></div>
-            <p className="bird-type">{this.props.bird.species}</p>
+            <p className="bird-type">{species}</p>
             <div className="line"></div>
             <AudioPlayer
-              src={this.props.bird.audio}
+              src={audio}
               showVolumeControl={false}
               showLoopControl={false}
               showJumpControls={false}
@@ -22,7 +23,7 @@ export default class BirdOverviewDone extends Component {
             />
           </div>
         </div>
-        <div className="description">{this.props.bird.description}</div>
+        <div className="description">{description}</div>
       </div>
     );
   }
