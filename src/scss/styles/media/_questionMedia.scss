@@ -1,0 +1,17 @@
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .question {
+    flex-direction: column;
+    height: auto;
+
+    .question-image {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+    }
+
+    .question-title {
+      align-items: center;
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.finish-score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #3a3a3a;
+  border: 1px solid #424242;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 40px;
+
+  .finish-img {
+    width: 40%;
+    border-radius: 10px;
+  }
+
+  .congrats {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 60px;
+  }
+
+  .congrats-text {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .line {
+    margin-top: 40px;
+    width: 100%;
+    height: 1px;
+    background-color: #4b4b4b;
+  }
+
+  .play-again {
+    margin-top: 60px;
+    width: 100%;
+    height: 60px;
+    background-color: #652e85;
+    border: 1px solid #424242;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  .play-again:hover {
+    cursor: pointer;
+    background-color: #8e51b6;
+  }
+}
