@@ -5,6 +5,10 @@ export default class NextLevel extends Component {
     const classes = ["next-level"];
     this.props.done ? classes.push("done") : null;
 
-    return <button className={classes.join(" ")}>Next Level</button>;
+    return (
+      <button className={classes.join(" ")} onClick={this.props.onClick}>
+        Следующий уровень
+      </button>
+    );
   }
 }

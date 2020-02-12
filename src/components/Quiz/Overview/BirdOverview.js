@@ -7,9 +7,9 @@ export default class BirdOverview extends Component {
     return (
       <div className="overview">
         {!this.props.done ? (
-          <BirdOverviewDone bird={this.props.bird} />
-        ) : (
           <BirdOverviewNotDone />
+        ) : (
+          <BirdOverviewDone bird={this.props.bird} />
         )}
       </div>
     );

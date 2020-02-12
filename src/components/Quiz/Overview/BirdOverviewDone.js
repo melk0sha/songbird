@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
+import AudioPlayer from "react-h5-audio-player";
 
 export default class BirdOverviewDone extends Component {
   render() {
@@ -11,7 +12,14 @@ export default class BirdOverviewDone extends Component {
             <div className="line"></div>
             <p className="bird-type">{this.props.bird.species}</p>
             <div className="line"></div>
-            <audio src={this.props.bird.audio} controls></audio>
+            <AudioPlayer
+              src={this.props.bird.audio}
+              showVolumeControl={false}
+              showLoopControl={false}
+              showJumpControls={false}
+              showDownloadProgress={false}
+              autoPlayAfterSrcChange={false}
+            />
           </div>
         </div>
         <div className="description">{this.props.bird.description}</div>
