@@ -25,6 +25,7 @@ export default class App extends Component {
       questionDone: false,
       isNext: false,
       answer: 0,
+      audioStopped: false,
       currentBird: function() {
         return birds[this.selected][current];
       }
@@ -35,6 +36,7 @@ export default class App extends Component {
     this.handleNextLevel = this.handleNextLevel.bind(this);
     this.handleForNext = this.handleForNext.bind(this);
     this.handleFinished = this.handleFinished.bind(this);
+    this.handleAudioStop = this.handleAudioStop.bind(this);
   }
 
   setScore() {
@@ -99,6 +101,7 @@ export default class App extends Component {
       questionDone: false,
       answer: 0,
       isNext: true,
+      audioStopped: false,
       currentBird: function() {
         return birds[selected][current];
       }
@@ -107,6 +110,10 @@ export default class App extends Component {
 
   handleForNext() {
     this.setState({ isNext: false });
+  }
+
+  handleAudioStop() {
+    this.setState({ audioStopped: true });
   }
 
   handleFinished() {
@@ -145,6 +152,7 @@ export default class App extends Component {
             handleAnswer={this.handleAnswer}
             handleForNext={this.handleForNext}
             handleNextLevel={this.handleNextLevel}
+            handleAudioStop={this.handleAudioStop}
           />
         )}
       </div>

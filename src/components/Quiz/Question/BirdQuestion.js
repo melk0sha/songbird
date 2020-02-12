@@ -4,7 +4,7 @@ import defaultImg from "./../../../assets/bird.jpg";
 
 export default class BirdQuestion extends Component {
   render() {
-    const { done } = this.props;
+    const { done, audioStopped } = this.props;
     const { image, name, audio } = this.props.bird;
     const pause = document.querySelector(".rhap_main-controls-button");
 
@@ -21,7 +21,12 @@ export default class BirdQuestion extends Component {
             showJumpControls={false}
             showDownloadProgress={false}
             autoPlayAfterSrcChange={false}
-            onListen={() => (done ? pause.click() : null)}
+            onListen={() => {
+              if (done && !audioStopped) {
+                this.props.handleAudioStop();
+                pause.click();
+              }
+            }}
           />
         </div>
       </div>

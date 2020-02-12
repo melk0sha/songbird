@@ -13,15 +13,24 @@ export default class Quiz extends Component {
       isNext,
       answer,
       answerDone,
-      finished
+      finished,
+      audioStopped
     } = this.props.quiz;
-    const { birds, handleAnswer, handleForNext, handleNextLevel } = this.props;
+    const {
+      birds,
+      handleAnswer,
+      handleForNext,
+      handleNextLevel,
+      handleAudioStop
+    } = this.props;
 
     return (
       <div className="main-quiz">
         <BirdQuestion
           bird={currentBird.call(this.props.quiz)}
           done={questionDone}
+          audioStopped={audioStopped}
+          handleAudioStop={handleAudioStop}
         />
         <div className="answers-overview-wrapper">
           <BirdAnswers
