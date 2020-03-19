@@ -25,7 +25,7 @@ What is happening:
 
 ### TOOLS USING
 
-There are **React**, **Webpack**, **react-h5-audio-player** (custom audio player)** **JavaScript** and **SCSS** were using.
+**React**, **Webpack**, **react-h5-audio-player** (custom audio player), **JavaScript** and **SCSS** were used here.
 
 Regarding **styles**:
 Adaptive & responsive design. Minimum page width with correct view - 320px.
