@@ -27,7 +27,7 @@ What is happening:
 
 **React**, **Webpack**, **react-h5-audio-player** (custom audio player), **JavaScript** and **SCSS** were used here.
 
-Regarding **styles**:
+Regarding **styles**:  
 Adaptive & responsive design. Minimum page width with correct view - 320px.
 
 ---
