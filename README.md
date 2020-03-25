@@ -2,13 +2,13 @@
 
 ---
 
-### DEPLOYMENT
+## DEPLOYMENT
 
 - [**SongBird Website link**](https://melk0sha-songbird.netlify.com/ "SongBird Quiz")
 
 ---
 
-### OVERVIEW
+## OVERVIEW
 
 This is a quiz about bird singing, voice and overview.
 
@@ -23,7 +23,7 @@ What is happening:
 
 ---
 
-### TOOLS USING
+## TOOLS USING
 
 **React**, **Webpack**, **react-h5-audio-player** (custom audio player), **JavaScript** and **SCSS** were used here.
 
@@ -32,6 +32,6 @@ Adaptive & responsive design. Minimum page width with correct view - 320px.
 
 ---
 
-#### DEVELOPMENT
+### DEVELOPMENT
 
 @ 2020 Diana Ivanova (@melk0sha)
